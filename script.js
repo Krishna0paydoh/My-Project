@@ -84,13 +84,37 @@
 // console.log(fruits[1]);
 
 
+// let friends = ["Aman", "Sameer", "Prince", "Chirag", "Madhav", "Jakir", "undefined"];
 
-let person = {
-    name: "John",
-    age: 25,
-    city: "Delhi"
-};
+// for (i = 0; i < friends.length; i++) {
+//     console.log("Hello " + friends[i] + " !");
+// }
 
-console.log(person.name);
-console.log(person.age);
-console.log(person.city);
+
+
+// Challenge: “Friends Score Game”
+
+// You have 5 friends.
+
+// Each friend has a score (number) in a game.
+
+// Your task:
+
+// Store friends’ names in an array.
+
+// Store their scores in another array (same order).
+
+// Write a function that loops through both arrays and prints:
+
+// <Friend> scored <score> points
+
+
+// Then, print the name of the friend with the highest score.
+
+
+let friends = ["Aman", "Sameer", "Prince", "Chirag", "Madhav"];
+let scores = [45, 78, 88, 60, 55];
+
+for (i = 0; i < friends.length; i++) {
+    console.log(friends[i] + " scored " + scores[i] + " points ");
+}
