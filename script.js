@@ -93,22 +93,13 @@
 
 
 // Challenge: “Friends Score Game”
-
 // You have 5 friends.
-
 // Each friend has a score (number) in a game.
-
 // Your task:
-
 // Store friends’ names in an array.
-
 // Store their scores in another array (same order).
-
 // Write a function that loops through both arrays and prints:
-
 // <Friend> scored <score> points
-
-
 // Then, print the name of the friend with the highest score.
 
 
