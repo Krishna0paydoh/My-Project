@@ -10,7 +10,7 @@ This faulty calculator does following:
   / --> +
 
 
-It performs wrong operation 90% of the times
+It performs wrong operation 50% of the times
 
 */
 
@@ -28,13 +28,13 @@ let obj = {
   "/": " + ",
 };
 
-if (random < 0.1) {
-  // Wrong Calculation = 10% of time
+if (random < 0.5) {
+  // Wrong Calculation = 50% of time
   b = obj[b];
   console.log(`The result is ${eval(`${a} ${b} ${c}`)}`);
   alert(`The result is ${eval(`${a} ${b} ${c}`)}`);
 } else {
-  // Correct calculation = 90% of time
+  // Correct calculation = 50% of time
   console.log(`The result is ${eval(`${a} ${b} ${c}`)}`);
   alert(`The result is ${eval(`${a} ${b} ${c}`)}`);
 }
