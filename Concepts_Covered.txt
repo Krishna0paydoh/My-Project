@@ -1,0 +1,11 @@
+Topics covered in JS
+
+Variables
+Data types
+Operators
+comments
+if , else if , else 
+for , while , do...while
+functions
+parameters , default parameters
+objects and arrays
