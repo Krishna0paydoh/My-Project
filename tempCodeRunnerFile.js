@@ -1,0 +1,2 @@
+sole.log(sum);
+con

@@ -1,6 +1,6 @@
 console.clear();
 
-let arr = [3, 8, 12, 5, 7, 20];
+let arr = [3, 8, 12, 5, 9, 20];
 let newarr = [];
 
 function isEven(num) {
@@ -27,7 +27,7 @@ function processNumbers(arr, multiplier) {
     }
 }
 
-processNumbers(arr, 3);
+processNumbers(arr, 7);
 
 console.log(newarr);
 
