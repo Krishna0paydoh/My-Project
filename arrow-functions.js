@@ -245,11 +245,172 @@ console.clear();
 
 // const coins = [1, 2, 5, 10];
 
-function total(coins) {
-    coins.reduce((container, coin) => {
-        return container + coin;
-    }, 0);
-}
+
+// // Wrong Function
+
+// function total(coins) {
+//     coins.reduce((container, coin) => {
+//         return container + coin;
+//     }, 0);
+// }
 
 
-console.log(total([1, 2, 3, 4]));
+// console.log(total([1, 2, 3, 4]));
+
+// const nums = [2, 4, 6, 8];
+// const result = nums.map(n => n * n);
+
+// console.log(result);
+
+// const nums1 = [10, 55, 32, 80, 99];
+// const result1 = nums1.filter(n => n > 50);
+
+// console.log(result1);
+
+// const nums2 = [5, 10, 15];
+// const result2 = nums2.reduce((a, b) => a + b, 0);
+
+// console.log(result2);
+
+
+
+// const num = [2, 5, 8, 10, 3];
+// const result = num
+//     .map(n => n * n)
+//     .filter(n => n > 50);
+
+// console.log(result);
+
+
+// const fruits = ["apple", "banana", "kiwi", "grape"];
+// const length = fruits
+//     .filter(n => n.length > 4)
+//     .reduce((a, b) => a + b.length, 0);
+
+// console.log(length);
+
+
+// const students = [
+//     { name: "Aman", marks: [80, 90, 70] },
+//     { name: "Krishna", marks: [60, 75, 85] },
+//     { name: "Riya", marks: [95, 88, 92] },
+//     { name: "Sam", marks: [40, 55, 60] }
+// ];
+
+// const result = students
+//     .map(student => {
+//         const doubled = student.marks.map(n => n * 2);
+//         const avgOfDoubleMarks = doubled.reduce((a, b) => a + b, 0) / student.marks.length;
+//         return {
+//             name: student.name,
+//             doubledmarks: doubled,
+//             Average: avgOfDoubleMarks,
+//         };
+//     })
+//     .filter(student => student.Average > 150);
+
+
+// console.log(result);
+
+
+// const employees = [
+//     { name: "Aman", department: "IT", salaries: [40000, 42000, 44000] },
+//     { name: "Krishna", department: "HR", salaries: [30000, 32000, 31000] },
+//     { name: "Riya", department: "Finance", salaries: [50000, 52000, 51000] },
+//     { name: "Sam", department: "IT", salaries: [25000, 26000, 27000] }
+// ];
+
+// const newArr = [];
+// const Result = employees
+//     .map(employee => {
+//         const Average = employee.salaries.reduce((a, b) => a + b / employee.salaries.length, 0);
+//         return newArr.push(employee.name, ` Avg : ${Average}`);
+//     })
+// console.log(newArr);
+
+
+// const employees = [
+//     { name: "Aman", dept: "IT", salary: 75000 },
+//     { name: "Krishna", dept: "HR", salary: 50000 },
+//     { name: "Riya", dept: "IT", salary: 90000 },
+//     { name: "Sam", dept: "Finance", salary: 45000 }
+// ];
+
+// const grouped = employees.reduce((acc, e) => {
+//     acc[e.dept] ??= [];
+//     acc[e.dept].push(e);
+//     return acc;
+// }, {});
+// console.log(grouped);
+
+
+
+// const students = [
+//     { name: "Aman", grade: "A" },
+//     { name: "Krishna", grade: "A" },
+//     { name: "Riya", grade: "B" },
+//     { name: "Sam", grade: "C" },
+//     { name: "Anita", grade: "B" },
+//     { name: "Anit", grade: "B" },
+//     { name: "Ania", grade: "C" },
+//     { name: "Anta", grade: "B" },
+//     { name: "Aita", grade: "C" }
+// ];
+
+
+// const grouped = students.reduce((student, a) => {
+//     student[a.grade] ??= [];
+//     student[a.grade].push(a.name);
+//     return student;
+// }, {});
+
+// console.log(grouped);
+
+
+
+// const students = [
+//     { name: "Krishna", marks: [80, 90, 70] },
+//     { name: "Mansi", marks: [95, 88, 92] },
+//     { name: "Aman", marks: [60, 75, 85] },
+//     { name: "Isha", marks: [40, 45, 25] },
+//     { name: "Anita", marks: [40, 37, 29] }
+// ];
+
+
+// const result = students.map(student => {
+//     const doubledMarks = student.marks.map(n => n * 2);
+//     const AvgMarks = student.marks.reduce((a, b) => a + b, 0) / student.marks.length;
+//     const status = AvgMarks >= 40 ? "Pass" : "Fail";
+//     return {
+//         name: student.name,
+//         doubledMarks: doubledMarks,
+//         Average: AvgMarks,
+//         status
+//     };
+// });
+
+// console.log(result);
+
+const students = [
+    { name: "Aman", marks: [60, 45, 50] },
+    { name: "Krishna", marks: [80, 90, 80] },
+    { name: "Mansi", marks: [95, 88, 92] },
+    { name: "Akshay", marks: [30, 45, 25] },
+    { name: "Anita", marks: [38, 45, 35] }
+];
+
+const grouped = students.reduce((acc, student) => {
+    const avg = student.marks.reduce((a, b) => a + b, 0) / student.marks.length;
+    const status = avg >= 40 ? "Pass" : "Fail";
+
+    acc[status] ??= [];
+    acc[status].push({ name: student.name, average: avg });
+
+    if (!acc.topper || avg > acc.topper.average) {
+        acc.topper = { name: student.name, average: avg };
+    }
+    return acc;
+
+}, {});
+
+console.log(grouped);

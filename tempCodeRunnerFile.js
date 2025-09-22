@@ -1,2 +1,2 @@
-sole.log(sum);
-con
+acc[status] ??= [];
+    
