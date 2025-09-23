@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Set a default light theme and font */
+body {
+  @apply font-sans bg-gray-100;
+  @apply bg-gray-100 text-black font-sans;
+  margin: 0;
+  padding: 0;
+}
