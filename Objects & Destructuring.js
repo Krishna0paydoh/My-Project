@@ -132,28 +132,28 @@ console.clear();
 
 // PAYDOH BANK
 
-// function createBankAccount(initialBalance) {
-//     let balance = initialBalance;
+function createBankAccount(initialBalance) {
+    let balance = initialBalance;
 
-//     return {
-//         deposit(amount) {
-//             balance += amount;
-//             console.log(`Deposited: ${amount}, Balance: ${balance}`);
-//         },
-//         withdraw(amount) {
-//             if (amount > balance) {
-//                 console.log("Insufficient funds!");
-//             } else {
-//                 balance -= amount;
-//                 console.log(`Withdrew: ${amount}, Balance: ${balance}`);
-//             }
-//         },
-//         getBalance() {
-//             console.log(balance);
-//         }
-//     };
-// }
+    return {
+        deposit(amount) {
+            balance += amount;
+            console.log(`Deposited: ${amount}, Balance: ${balance}`);
+        },
+        withdraw(amount) {
+            if (amount > balance) {
+                console.log("Insufficient funds!");
+            } else {
+                balance -= amount;
+                console.log(`Withdrew: ${amount}, Balance: ${balance}`);
+            }
+        },
+        getBalance() {
+            console.log(balance);
+        }
+    };
+}
 
-// const account = createBankAccount(0);
-// account.getBalance();
+const account = createBankAccount(0);
+account.getBalance();
 

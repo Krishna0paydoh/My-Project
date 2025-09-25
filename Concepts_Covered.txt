@@ -1,11 +1,17 @@
 Topics covered in JS
 
-Variables
-Data types
-Operators
-comments
-if , else if , else 
-for , while , do...while
-functions
-parameters , default parameters
-objects and arrays
+Variables (let, const, var)
+Data types (string, number, boolean, null, undefined, object, array)
+Operators (arithmetic, comparison, logical, assignment)
+Comments (//, /* */)
+Conditional statements (if, else if, else)
+Loops (for, while, do...while)
+Functions (declaration, expression)
+Function parameters & default parameters
+Objects & Arrays (basic creation & access)
+Arrow functions (() => {})
+Template literals (`Hello ${name}`)
+Destructuring (arrays & objects)
+Spread & Rest operators (...)
+Array methods: forEach, map, filter, reduce, some, every, find, findIndex
+Object methods: Object.keys(), Object.values(), Object.entries()
