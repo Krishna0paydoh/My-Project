@@ -1,22 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const title = document.getElementById("main-title");
-    const paragraphs = document.querySelectorAll(".text");
-    const changeTextBtn = document.getElementById("change-text");
-    const toggleColorBtn = document.getElementById("toggle-color");
-    const addParagraphBtn = document.getElementById("add-paragraph");
+const title = document.getElementById("title");
+// console.log(title);
 
-    changeTextBtn.addEventListener("click", () => {
-        title.textContent = "DOM Manipulation is Fun!";
-    });
+title.textContent = "Oops ! Title changed";
 
-    toggleColorBtn.addEventListener("click", () => {
-        title.classList.toggle("highlight");
-    });
+const para = document.querySelectorAll(".text");
 
-    addParagraphBtn.addEventListener("click", () => {
-        const newPara = document.createElement("p");
-        newPara.textContent = "I am a new paragraph!";
-        newPara.classList.add("text");
-        document.body.appendChild(newPara);
-    });
+para.forEach(p => {
+    p.textContent = "The paragraph is changed !"
 });
+
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+    title.textContent = "Why you clicked that !"
+    title.style.color = "red"
+    title.style.fontSize = "64px"
+});
+
+
