@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
     const nameValue = name.value;
     const passwordValue = password.value;
 
-    message.textContent = `Hello ${nameValue} your password is ${passwordValue} and sending this sensitive credentials to public pages | Dont worry your data is secured ♥`;
+    message.textContent = `Hello ${nameValue} your password is ${passwordValue} and uploading this sensitive credentials to public pages | Dont worry your data is secured ♥`;
 
     form.reset();
 });
