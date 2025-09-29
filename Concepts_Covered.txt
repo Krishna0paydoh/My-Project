@@ -1,17 +1,62 @@
-Topics covered in JS
+JS Learning Roadmap
 
-Variables (let, const, var)
-Data types (string, number, boolean, null, undefined, object, array)
-Operators (arithmetic, comparison, logical, assignment)
-Comments (//, /* */)
-Conditional statements (if, else if, else)
-Loops (for, while, do...while)
-Functions (declaration, expression)
-Function parameters & default parameters
-Objects & Arrays (basic creation & access)
-Arrow functions (() => {})
-Template literals (`Hello ${name}`)
-Destructuring (arrays & objects)
-Spread & Rest operators (...)
-Array methods: forEach, map, filter, reduce, some, every, find, findIndex
-Object methods: Object.keys(), Object.values(), Object.entries()
+
+Phase 1: Basics – Completed ✅
+
+
+Variables (let, const, var) ✅
+
+Data types (string, number, boolean, null, undefined, object, array) ✅
+
+Operators (arithmetic, comparison, logical, assignment) ✅
+
+Comments (//, /* */) ✅
+
+Conditional statements (if, else if, else, ternary) ✅
+
+Loops (for, while, do...while) ✅
+
+Functions (declaration, expression) ✅
+
+Function parameters & default parameters ✅
+
+Objects & Arrays (basic creation & access) ✅
+
+
+
+Phase 2: Intermediate – In Progress ✅
+
+
+Covered:
+
+Arrow functions (() => {}) ✅
+
+Template literals ✅
+
+Destructuring (arrays & objects) ✅
+
+Spread & Rest operators (...) ✅
+
+Array methods: forEach, map, filter, reduce, some, every, find, findIndex ✅
+
+Object methods: Object.keys(), Object.values(), Object.entries() ✅
+
+Modules: export / import ✅ (with Node.js basics)
+
+DOM manipulation (querySelector, getElementById, createElement, appendChild) ✅
+
+DOM content & styles (textContent, innerHTML, classList, style) ✅
+
+Event listeners (addEventListener, onclick, submit, click events) ✅
+
+Form events & handling (preventDefault, input values, reset) ✅
+
+Toggling classes (classList.toggle) ✅
+
+Removing elements (removeChild) ✅
+
+Practiced projects / exercises:
+
+Dynamic To-Do List (single-user, adding tasks, deleting tasks, marking as completed) ✅
+
+Basic form handling and displaying messages ✅
