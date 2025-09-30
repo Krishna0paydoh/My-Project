@@ -1,3 +1,6 @@
-console.log(Object.keys(car));    // ["brand", "model", "year"]
-// console.log(Object.values(car));  // ["Tesla", "Model 3", 2023]
-// console.log(Object.entries(car)); // [["brand","Tesla"], ["model","Model 3"], ["year",2023]]
+async function getPost() {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+//     const data = await response.json();
+//     console.log(data);
+// }
+// getPost();

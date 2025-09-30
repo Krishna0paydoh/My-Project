@@ -9,7 +9,8 @@ function person(name, age) {
 
 };
 
-const person1 = person("Alice", 20);
-const person2 = person("Bob", 22);
+const person1 = new person("Alice", 20);
+const person2 = new person("Bob", 22);
 
 person1.sayHello();
+person2.sayHello();
