@@ -34,7 +34,7 @@ async function fetchUsers() {
 async function showUsers() {
     const users = await fetchUsers();
 
-    users.slice(0, 10).forEach(u => {
+    users.slice(0, 4).forEach(u => {
         const name = u?.name ?? "No Name";
         const email = u?.email ?? "No Email";
 
@@ -42,7 +42,7 @@ async function showUsers() {
         user.greet();
     });
 
-    const adminData = users[0];
+    const adminData = users[1];
     const admin = new Admin(adminData?.name ?? "Unknown", adminData?.email ?? "No Email", "Admin");
     admin.showRole();
 }

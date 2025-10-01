@@ -169,3 +169,31 @@ console.clear();
 // getData((data) => {
 //     console.log("Logging :", data);
 // });
+
+
+// function sayHello() {
+//     console.log(this);
+// }
+// sayHello();
+
+
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     greet() {
+//         console.log(`Hello, I am ${this.name} and I am ${this.age} years old`);
+//     }
+// }
+
+// const person1 = new Person("Alice", 25);
+// const person2 = new Person("Bob", 30);
+// const person3 = new Person("Dora", 21);
+// const person4 = new Person("Pihu", 28);
+
+// person1.greet();
+// person2.greet();
+// person3.greet();
+// person4.greet(); 
