@@ -170,7 +170,7 @@ async function loadUsers() {
         const response = await fetch("https://jsonplaceholder.typicode.com/users");
         const data = await response.json();
 
-        userContainer.innerHTML = ""; // clear loading
+        userContainer.innerHTML = "";
 
         const admin = new Admin("Bob", "admin@mail.com");
 
@@ -188,7 +188,6 @@ async function loadUsers() {
 
             userContainer.appendChild(userDiv);
 
-            // Admin delete action
             document.getElementById(`del_${name}`).addEventListener("click", () => {
                 const userObj = new User(name, email);
                 admin.deleteUser(userObj, userContainer);
